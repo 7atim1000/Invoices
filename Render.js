@@ -7,6 +7,7 @@ Since bcrypt is a native dependency, it must be compiled for the target OS. Your
 Use bcryptjs Instead (No Native Dependencies)
 If rebuilding doesn’t work, switch to bcryptjs (a pure-JS alternative):
 
+cd pos-backend : open backend integrated terminal :
 npm uninstall bcrypt
 npm install bcryptjs
 git add .
