@@ -13,4 +13,12 @@ git config --global user.email "your-email@example.com"
 2- SSH vs HTTPS:
 
 If you're using HTTPS, ensure you're authenticated with the correct account.
+
+STEPS OF PUSH :
+1. git init
+2. git add *
+3. git commit -m "------"
+
+4. from gitHub REPO
+5. from gitHub REPO
 */ 
