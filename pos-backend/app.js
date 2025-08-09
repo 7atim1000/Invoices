@@ -26,6 +26,9 @@ app.use(
     credentials: true, // Allow cookies/auth headers
   })
 );
+
+// Explicitly handle OPTIONS (preflight) for all routes
+app.options('*', cors()); 
  
 //Middleware Parse incoming request in json format and cookie parser for cookies and token 
 app.use(express.json()); 
