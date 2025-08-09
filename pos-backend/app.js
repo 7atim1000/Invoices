@@ -19,14 +19,13 @@ connectDB();
 connectCloudinary();
 
 // cors policy to unblock response
-app.use(cors({
-    credentials: true,
-    origin: [
-  'https://salesinvoice.onrender.com',
-  'https://www.salesinvoice.onrender.com', // If applicable
-  'http://localhost:5173' // For local testing
-]
- }))
+// CORS Middleware
+app.use(
+  cors({
+    origin: 'https://salesinvoice.onrender.com', // No trailing slash!
+    credentials: true, // Allow cookies/auth headers
+  })
+);
  
 //Middleware Parse incoming request in json format and cookie parser for cookies and token 
 app.use(express.json()); 
