@@ -21,7 +21,7 @@ connectCloudinary();
 // cors policy to unblock response
 app.use(cors({
     credentials: true,
-    origin: ['https://salesinvoice.onrender.com/auth']
+    origin: ['https://salesinvoice.onrender.com']
  }))
  
 //Middleware Parse incoming request in json format and cookie parser for cookies and token 
