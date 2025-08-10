@@ -22,7 +22,7 @@ connectCloudinary();
 // CORS Middleware
 app.use(
   cors({
-    origin: 'https://salesinvoice.onrender.com', // No trailing slash!
+    origin: 'http://salesinvoice.onrender.com', // No trailing slash!
     credentials: true, // Allow cookies/auth headers
   })
 );
